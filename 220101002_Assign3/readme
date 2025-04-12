@@ -1,0 +1,32 @@
+Assumed that block size is one that is at each cache line single mem address and val will be stored and also in case read always assign val 1 at that mem location 
+And output format is like if there is cache miss then it will show Just Cache miss 
+And if there is cache hit then it will show cache hit and val at that address  
+If at same mem location new val is to write considered as cache hit and update val directly in cache
+
+Sample Example
+
+Input format be as follows 
+Operation MEM_address Val(if needed)
+1.Read 2.Write 3.Exit
+1 12
+Cache miss
+1 2
+Cache miss
+2 24 4
+Cache miss
+1 0
+Cache miss
+1 0
+Cache hit : 1   ; here default val if read done before write
+1 11
+Need eviction
+1 11
+Cache hit : 1
+1 12 
+Cache hit : 1
+2 13 23
+Cache miss
+1 13 
+Cache hit : 23  ; here updated val 
+3 ; to exit/terminate
+

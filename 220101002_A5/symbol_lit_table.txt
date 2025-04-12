@@ -1,0 +1,21 @@
+=== SYMBOL TABLE ===
+
+Identifiers:
+f_even
+f_odd
+fibonacci
+main
+n
+printInt
+printStr
+r
+
+Literals:
+) =  : STRING_LIT
+-1 : INTEGER_CONST
+-2 : INTEGER_CONST
+0 : INTEGER_CONST
+1 : INTEGER_CONST
+10 : INTEGER_CONST
+2 : INTEGER_CONST
+fibo( : STRING_LIT
