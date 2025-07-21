@@ -1,0 +1,12 @@
+To run the code nevigate to terminal and give commands 
+
+$ $ g++ -o twoPass twoPass.cpp
+$ $ ./twoPass
+
+File description
+1. twoPass.cpp : Implementation of two pass assembler 
+2. intermediate.txt : This will contain the intermediate code generated after first pass
+3. machineCode.txt : This is for reference that source code is converted to correct object code (each instruction's hex correspondance)
+4. output.txt : This contain the final .obj file of the given assembly code
+5. symbolTable.txt : Contains the symbol table generated in pass one
+

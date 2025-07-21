@@ -1,0 +1,446 @@
+Line No: 1 Multiline Comment started.
+Line No: 4 Multiline Comment ended
+Line No: 6 Single line comment.
+Line No: 7 Reduction: type_specifier -> INTEGER
+Line No: 7 Reduction: CONSTANT -> INTCONST
+Line No: 7 Reduction: primary_expression -> CONSTANT
+Line No: 7 Reduction: postfix_expression -> primary_expression
+Line No: 7 Reduction: unary_expression -> postfix_expression
+Line No: 7 Reduction: multiplicative_expression -> unary_expression
+Line No: 7 Reduction: additive_expression -> multiplicative_expression
+Line No: 7 Reduction: relational_expression -> additive_expression
+Line No: 7 Reduction: equality_expression -> relational_expression
+Line No: 7 Reduction: logical_AND_expression -> equality_expression
+Line No: 7 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 7 Reduction: conditional_expression -> logical_OR_expression
+Line No: 7 Reduction: assignment_expression -> conditional_expression
+Line No: 7 Reduction: initializer -> assignment_expression
+Line No: 7 Reduction: variable_declaration -> type_specifier IDENTIFIER = initializer ;
+Line No: 7 Reduction: external_declaration -> variable_declaration
+Line No: 7 Reduction: translation_unit -> external_declaration
+Line No: 8 Reduction: type_specifier -> INTEGER
+Line No: 8 Reduction: type_specifier -> INTEGER
+Line No: 8 Reduction: pointer_opt -> epsilon
+Line No: 8 Reduction: identifier_opt -> IDENTIFIER
+Line No: 8 Reduction: parameter_declaration -> type_specifier pointer_opt identifier_opt
+Line No: 8 Reduction: parameter_list -> parameter_declaration
+Line No: 8 Reduction: parameter_list_opt -> parameter_list
+Line No: 8 Reduction: direct_function_declarator -> IDENTIFIER ( parameter_list_opt )
+Line No: 8 Reduction: function_declarator -> * direct_function_declarator
+Line No: 9 Reduction: primary_expression -> IDENTIFIER
+Line No: 9 Reduction: postfix_expression -> primary_expression
+Line No: 9 Reduction: unary_expression -> postfix_expression
+Line No: 9 Reduction: multiplicative_expression -> unary_expression
+Line No: 9 Reduction: primary_expression -> IDENTIFIER
+Line No: 9 Reduction: postfix_expression -> primary_expression
+Line No: 9 Reduction: unary_expression -> postfix_expression
+Line No: 9 Reduction: multiplicative_expression -> multiplicative_expression * unary_expression
+Line No: 9 Reduction: additive_expression -> multiplicative_expression
+Line No: 9 Reduction: relational_expression -> additive_expression
+Line No: 9 Reduction: equality_expression -> relational_expression
+Line No: 9 Reduction: logical_AND_expression -> equality_expression
+Line No: 9 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 9 Reduction: conditional_expression -> logical_OR_expression
+Line No: 9 Reduction: assignment_expression -> conditional_expression
+Line No: 9 Reduction: expression -> assignment_expression
+Line No: 9 Reduction: expression_opt -> expression
+Line No: 9 Reduction: jump_statement -> RETURN expression_opt ;
+Line No: 9 Reduction: statement -> jump_statement
+Line No: 9 Reduction: block_item -> statement
+Line No: 9 Reduction: block_item_list -> block_item
+Line No: 10 Reduction: block_item_list_opt -> block_item_list
+Line No: 10 Reduction: compound_statement -> begin block_item_list_opt end
+Line No: 10 Reduction: function_definition -> type_specifier function_declarator compound_statement
+Line No: 10 Reduction: external_declaration -> function_definition
+Line No: 10 Reduction: translation_unit -> translation_unit external_declaration
+Line No: 12 Reduction: type_specifier -> INTEGER
+Line No: 12 Reduction: type_specifier -> INTEGER
+Line No: 12 Reduction: pointer_opt -> epsilon
+Line No: 12 Reduction: identifier_opt -> IDENTIFIER
+Line No: 12 Reduction: parameter_declaration -> type_specifier pointer_opt identifier_opt
+Line No: 12 Reduction: parameter_list -> parameter_declaration
+Line No: 12 Reduction: parameter_list_opt -> parameter_list
+Line No: 12 Reduction: direct_function_declarator -> IDENTIFIER ( parameter_list_opt )
+Line No: 12 Reduction: function_declarator -> direct_function_declarator
+Line No: 13 Reduction: type_specifier -> INTEGER
+Line No: 13 Reduction: pointer_opt -> epsilon
+Line No: 13 Reduction: direct_declarator -> IDENTIFIER
+Line No: 13 Reduction: declarator -> pointer_opt direct_declarator
+Line No: 13 Reduction: CONSTANT -> INTCONST
+Line No: 13 Reduction: primary_expression -> CONSTANT
+Line No: 13 Reduction: postfix_expression -> primary_expression
+Line No: 13 Reduction: unary_expression -> postfix_expression
+Line No: 13 Reduction: multiplicative_expression -> unary_expression
+Line No: 13 Reduction: additive_expression -> multiplicative_expression
+Line No: 13 Reduction: relational_expression -> additive_expression
+Line No: 13 Reduction: equality_expression -> relational_expression
+Line No: 13 Reduction: logical_AND_expression -> equality_expression
+Line No: 13 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 13 Reduction: conditional_expression -> logical_OR_expression
+Line No: 13 Reduction: assignment_expression -> conditional_expression
+Line No: 13 Reduction: initializer -> assignment_expression
+Line No: 13 Reduction: init_declarator -> declarator = initializer
+Line No: 13 Reduction: declaration -> type_specifier init_declarator ;
+Line No: 13 Reduction: block_item -> declaration
+Line No: 13 Reduction: block_item_list -> block_item
+Line No: 14 Reduction: primary_expression -> IDENTIFIER
+Line No: 14 Reduction: postfix_expression -> primary_expression
+Line No: 14 Reduction: unary_expression -> postfix_expression
+Line No: 14 Reduction: CONSTANT -> INTCONST
+Line No: 14 Reduction: primary_expression -> CONSTANT
+Line No: 14 Reduction: postfix_expression -> primary_expression
+Line No: 14 Reduction: unary_expression -> postfix_expression
+Line No: 14 Reduction: multiplicative_expression -> unary_expression
+Line No: 14 Reduction: additive_expression -> multiplicative_expression
+Line No: 14 Reduction: relational_expression -> additive_expression
+Line No: 14 Reduction: equality_expression -> relational_expression
+Line No: 14 Reduction: logical_AND_expression -> equality_expression
+Line No: 14 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 14 Reduction: conditional_expression -> logical_OR_expression
+Line No: 14 Reduction: assignment_expression -> conditional_expression
+Line No: 14 Reduction: assignment_expression -> unary_expression = assignment_expression
+Line No: 14 Reduction: expression -> assignment_expression
+Line No: 14 Reduction: expression_opt -> expression
+Line No: 14 Reduction: primary_expression -> IDENTIFIER
+Line No: 14 Reduction: postfix_expression -> primary_expression
+Line No: 14 Reduction: unary_expression -> postfix_expression
+Line No: 14 Reduction: multiplicative_expression -> unary_expression
+Line No: 14 Reduction: additive_expression -> multiplicative_expression
+Line No: 14 Reduction: relational_expression -> additive_expression
+Line No: 14 Reduction: CONSTANT -> INTCONST
+Line No: 14 Reduction: primary_expression -> CONSTANT
+Line No: 14 Reduction: postfix_expression -> primary_expression
+Line No: 14 Reduction: unary_expression -> postfix_expression
+Line No: 14 Reduction: multiplicative_expression -> unary_expression
+Line No: 14 Reduction: additive_expression -> multiplicative_expression
+Line No: 14 Reduction: relational_expression -> relational_expression < additive_expression
+Line No: 14 Reduction: equality_expression -> relational_expression
+Line No: 14 Reduction: logical_AND_expression -> equality_expression
+Line No: 14 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 14 Reduction: conditional_expression -> logical_OR_expression
+Line No: 14 Reduction: assignment_expression -> conditional_expression
+Line No: 14 Reduction: expression -> assignment_expression
+Line No: 14 Reduction: expression_opt -> expression
+Line No: 14 Reduction: primary_expression -> IDENTIFIER
+Line No: 14 Reduction: postfix_expression -> primary_expression
+Line No: 14 Reduction: unary_expression -> postfix_expression
+Line No: 14 Reduction: primary_expression -> IDENTIFIER
+Line No: 14 Reduction: postfix_expression -> primary_expression
+Line No: 14 Reduction: unary_expression -> postfix_expression
+Line No: 14 Reduction: multiplicative_expression -> unary_expression
+Line No: 14 Reduction: additive_expression -> multiplicative_expression
+Line No: 14 Reduction: CONSTANT -> INTCONST
+Line No: 14 Reduction: primary_expression -> CONSTANT
+Line No: 14 Reduction: postfix_expression -> primary_expression
+Line No: 14 Reduction: unary_expression -> postfix_expression
+Line No: 14 Reduction: multiplicative_expression -> unary_expression
+Line No: 14 Reduction: additive_expression -> additive_expression + multiplicative_expression
+Line No: 14 Reduction: relational_expression -> additive_expression
+Line No: 14 Reduction: equality_expression -> relational_expression
+Line No: 14 Reduction: logical_AND_expression -> equality_expression
+Line No: 14 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 14 Reduction: conditional_expression -> logical_OR_expression
+Line No: 14 Reduction: assignment_expression -> conditional_expression
+Line No: 14 Reduction: assignment_expression -> unary_expression = assignment_expression
+Line No: 14 Reduction: expression -> assignment_expression
+Line No: 14 Reduction: expression_opt -> expression
+Line No: 15 Reduction: primary_expression -> IDENTIFIER
+Line No: 15 Reduction: postfix_expression -> primary_expression
+Line No: 15 Reduction: unary_expression -> postfix_expression
+Line No: 15 Reduction: primary_expression -> IDENTIFIER
+Line No: 15 Reduction: postfix_expression -> primary_expression
+Line No: 15 Reduction: unary_expression -> postfix_expression
+Line No: 15 Reduction: multiplicative_expression -> unary_expression
+Line No: 15 Reduction: additive_expression -> multiplicative_expression
+Line No: 15 Reduction: primary_expression -> IDENTIFIER
+Line No: 15 Reduction: postfix_expression -> primary_expression
+Line No: 15 Reduction: primary_expression -> IDENTIFIER
+Line No: 15 Reduction: postfix_expression -> primary_expression
+Line No: 15 Reduction: unary_expression -> postfix_expression
+Line No: 15 Reduction: multiplicative_expression -> unary_expression
+Line No: 15 Reduction: additive_expression -> multiplicative_expression
+Line No: 15 Reduction: relational_expression -> additive_expression
+Line No: 15 Reduction: equality_expression -> relational_expression
+Line No: 15 Reduction: logical_AND_expression -> equality_expression
+Line No: 15 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 15 Reduction: conditional_expression -> logical_OR_expression
+Line No: 15 Reduction: assignment_expression -> conditional_expression
+Line No: 15 Reduction: expression -> assignment_expression
+Line No: 15 Reduction: postfix_expression -> postfix_expression [ expression ]
+Line No: 15 Reduction: unary_expression -> postfix_expression
+Line No: 15 Reduction: multiplicative_expression -> unary_expression
+Line No: 15 Reduction: additive_expression -> additive_expression + multiplicative_expression
+Line No: 15 Reduction: relational_expression -> additive_expression
+Line No: 15 Reduction: equality_expression -> relational_expression
+Line No: 15 Reduction: logical_AND_expression -> equality_expression
+Line No: 15 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 15 Reduction: conditional_expression -> logical_OR_expression
+Line No: 15 Reduction: assignment_expression -> conditional_expression
+Line No: 15 Reduction: assignment_expression -> unary_expression = assignment_expression
+Line No: 15 Reduction: expression -> assignment_expression
+Line No: 15 Reduction: expression_opt -> expression
+Line No: 15 Reduction: expression_statement -> expression_opt ;
+Line No: 15 Reduction: statement -> expression_statement
+Line No: 15 Reduction: block_item -> statement
+Line No: 15 Reduction: block_item_list -> block_item
+Line No: 16 Reduction: block_item_list_opt -> block_item_list
+Line No: 16 Reduction: compound_statement -> begin block_item_list_opt end
+Line No: 16 Reduction: statement -> compound_statement
+Line No: 16 Reduction: iteration_statement -> for ( expression_opt ; expression_opt ; expression_opt ) statement
+Line No: 16 Reduction: statement -> iteration_statement
+Line No: 16 Reduction: block_item -> statement
+Line No: 16 Reduction: block_item_list -> block_item_list block_item
+Line No: 17 Reduction: primary_expression -> IDENTIFIER
+Line No: 17 Reduction: postfix_expression -> primary_expression
+Line No: 17 Reduction: unary_expression -> postfix_expression
+Line No: 17 Reduction: multiplicative_expression -> unary_expression
+Line No: 17 Reduction: additive_expression -> multiplicative_expression
+Line No: 17 Reduction: relational_expression -> additive_expression
+Line No: 17 Reduction: equality_expression -> relational_expression
+Line No: 17 Reduction: logical_AND_expression -> equality_expression
+Line No: 17 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 17 Reduction: conditional_expression -> logical_OR_expression
+Line No: 17 Reduction: assignment_expression -> conditional_expression
+Line No: 17 Reduction: expression -> assignment_expression
+Line No: 17 Reduction: expression_opt -> expression
+Line No: 17 Reduction: jump_statement -> RETURN expression_opt ;
+Line No: 17 Reduction: statement -> jump_statement
+Line No: 17 Reduction: block_item -> statement
+Line No: 17 Reduction: block_item_list -> block_item_list block_item
+Line No: 18 Reduction: block_item_list_opt -> block_item_list
+Line No: 18 Reduction: compound_statement -> begin block_item_list_opt end
+Line No: 18 Reduction: function_definition -> type_specifier function_declarator compound_statement
+Line No: 18 Reduction: external_declaration -> function_definition
+Line No: 18 Reduction: translation_unit -> translation_unit external_declaration
+Line No: 20 Reduction: type_specifier -> INTEGER
+Line No: 20 Reduction: parameter_list_opt -> epsilon
+Line No: 20 Reduction: direct_function_declarator -> IDENTIFIER ( parameter_list_opt )
+Line No: 20 Reduction: function_declarator -> direct_function_declarator
+Line No: 21 Reduction: type_specifier -> INTEGER
+Line No: 21 Reduction: pointer_opt -> epsilon
+Line No: 21 Reduction: direct_declarator -> IDENTIFIER
+Line No: 21 Reduction: declarator -> pointer_opt direct_declarator
+Line No: 21 Reduction: init_declarator -> declarator
+Line No: 21 Reduction: declaration -> type_specifier init_declarator ;
+Line No: 21 Reduction: block_item -> declaration
+Line No: 21 Reduction: block_item_list -> block_item
+Line No: 22 Reduction: primary_expression -> IDENTIFIER
+Line No: 22 Reduction: postfix_expression -> primary_expression
+Line No: 22 Reduction: unary_expression -> postfix_expression
+Line No: 22 Reduction: primary_expression -> IDENTIFIER
+Line No: 22 Reduction: postfix_expression -> primary_expression
+Line No: 22 Reduction: CONSTANT -> INTCONST
+Line No: 22 Reduction: primary_expression -> CONSTANT
+Line No: 22 Reduction: postfix_expression -> primary_expression
+Line No: 22 Reduction: unary_expression -> postfix_expression
+Line No: 22 Reduction: multiplicative_expression -> unary_expression
+Line No: 22 Reduction: additive_expression -> multiplicative_expression
+Line No: 22 Reduction: relational_expression -> additive_expression
+Line No: 22 Reduction: equality_expression -> relational_expression
+Line No: 22 Reduction: logical_AND_expression -> equality_expression
+Line No: 22 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 22 Reduction: conditional_expression -> logical_OR_expression
+Line No: 22 Reduction: assignment_expression -> conditional_expression
+Line No: 22 Reduction: argument_expression_list -> assignment_expression
+Line No: 22 Reduction: argument_expression_list_opt -> argument_expression_list
+Line No: 22 Reduction: postfix_expression -> postfix_expression ( argument_expression_list_opt )
+Line No: 22 Reduction: unary_expression -> postfix_expression
+Line No: 22 Reduction: multiplicative_expression -> unary_expression
+Line No: 22 Reduction: additive_expression -> multiplicative_expression
+Line No: 22 Reduction: relational_expression -> additive_expression
+Line No: 22 Reduction: equality_expression -> relational_expression
+Line No: 22 Reduction: logical_AND_expression -> equality_expression
+Line No: 22 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 22 Reduction: conditional_expression -> logical_OR_expression
+Line No: 22 Reduction: assignment_expression -> conditional_expression
+Line No: 22 Reduction: assignment_expression -> unary_expression = assignment_expression
+Line No: 22 Reduction: expression -> assignment_expression
+Line No: 22 Reduction: expression_opt -> expression
+Line No: 22 Reduction: expression_statement -> expression_opt ;
+Line No: 22 Reduction: statement -> expression_statement
+Line No: 22 Reduction: block_item -> statement
+Line No: 22 Reduction: block_item_list -> block_item_list block_item
+Line No: 23 Reduction: type_specifier -> INTEGER
+Line No: 23 Reduction: pointer_opt -> epsilon
+Line No: 23 Reduction: direct_declarator -> IDENTIFIER
+Line No: 23 Reduction: declarator -> pointer_opt direct_declarator
+Line No: 23 Reduction: init_declarator -> declarator
+Line No: 23 Reduction: declaration -> type_specifier init_declarator ;
+Line No: 23 Reduction: block_item -> declaration
+Line No: 23 Reduction: block_item_list -> block_item_list block_item
+Line No: 24 Reduction: type_specifier -> INTEGER
+Line No: 24 Reduction: pointer_opt -> epsilon
+Line No: 24 Reduction: direct_declarator -> IDENTIFIER [ INTCONST ]
+Line No: 24 Reduction: declarator -> pointer_opt direct_declarator
+Line No: 24 Reduction: init_declarator -> declarator
+Line No: 24 Reduction: declaration -> type_specifier init_declarator ;
+Line No: 24 Reduction: block_item -> declaration
+Line No: 24 Reduction: block_item_list -> block_item_list block_item
+Line No: 25 Reduction: primary_expression -> IDENTIFIER
+Line No: 25 Reduction: postfix_expression -> primary_expression
+Line No: 25 Reduction: unary_expression -> postfix_expression
+Line No: 25 Reduction: CONSTANT -> INTCONST
+Line No: 25 Reduction: primary_expression -> CONSTANT
+Line No: 25 Reduction: postfix_expression -> primary_expression
+Line No: 25 Reduction: unary_expression -> postfix_expression
+Line No: 25 Reduction: multiplicative_expression -> unary_expression
+Line No: 25 Reduction: additive_expression -> multiplicative_expression
+Line No: 25 Reduction: relational_expression -> additive_expression
+Line No: 25 Reduction: equality_expression -> relational_expression
+Line No: 25 Reduction: logical_AND_expression -> equality_expression
+Line No: 25 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 25 Reduction: conditional_expression -> logical_OR_expression
+Line No: 25 Reduction: assignment_expression -> conditional_expression
+Line No: 25 Reduction: assignment_expression -> unary_expression = assignment_expression
+Line No: 25 Reduction: expression -> assignment_expression
+Line No: 25 Reduction: expression_opt -> expression
+Line No: 25 Reduction: primary_expression -> IDENTIFIER
+Line No: 25 Reduction: postfix_expression -> primary_expression
+Line No: 25 Reduction: unary_expression -> postfix_expression
+Line No: 25 Reduction: multiplicative_expression -> unary_expression
+Line No: 25 Reduction: additive_expression -> multiplicative_expression
+Line No: 25 Reduction: relational_expression -> additive_expression
+Line No: 25 Reduction: CONSTANT -> INTCONST
+Line No: 25 Reduction: primary_expression -> CONSTANT
+Line No: 25 Reduction: postfix_expression -> primary_expression
+Line No: 25 Reduction: unary_expression -> postfix_expression
+Line No: 25 Reduction: multiplicative_expression -> unary_expression
+Line No: 25 Reduction: additive_expression -> multiplicative_expression
+Line No: 25 Reduction: relational_expression -> relational_expression < additive_expression
+Line No: 25 Reduction: equality_expression -> relational_expression
+Line No: 25 Reduction: logical_AND_expression -> equality_expression
+Line No: 25 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 25 Reduction: conditional_expression -> logical_OR_expression
+Line No: 25 Reduction: assignment_expression -> conditional_expression
+Line No: 25 Reduction: expression -> assignment_expression
+Line No: 25 Reduction: expression_opt -> expression
+Line No: 25 Reduction: primary_expression -> IDENTIFIER
+Line No: 25 Reduction: postfix_expression -> primary_expression
+Line No: 25 Reduction: unary_expression -> postfix_expression
+Line No: 25 Reduction: primary_expression -> IDENTIFIER
+Line No: 25 Reduction: postfix_expression -> primary_expression
+Line No: 25 Reduction: unary_expression -> postfix_expression
+Line No: 25 Reduction: multiplicative_expression -> unary_expression
+Line No: 25 Reduction: additive_expression -> multiplicative_expression
+Line No: 25 Reduction: CONSTANT -> INTCONST
+Line No: 25 Reduction: primary_expression -> CONSTANT
+Line No: 25 Reduction: postfix_expression -> primary_expression
+Line No: 25 Reduction: unary_expression -> postfix_expression
+Line No: 25 Reduction: multiplicative_expression -> unary_expression
+Line No: 25 Reduction: additive_expression -> additive_expression + multiplicative_expression
+Line No: 25 Reduction: relational_expression -> additive_expression
+Line No: 25 Reduction: equality_expression -> relational_expression
+Line No: 25 Reduction: logical_AND_expression -> equality_expression
+Line No: 25 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 25 Reduction: conditional_expression -> logical_OR_expression
+Line No: 25 Reduction: assignment_expression -> conditional_expression
+Line No: 25 Reduction: assignment_expression -> unary_expression = assignment_expression
+Line No: 25 Reduction: expression -> assignment_expression
+Line No: 25 Reduction: expression_opt -> expression
+Line No: 26 Reduction: primary_expression -> IDENTIFIER
+Line No: 26 Reduction: postfix_expression -> primary_expression
+Line No: 26 Reduction: primary_expression -> IDENTIFIER
+Line No: 26 Reduction: postfix_expression -> primary_expression
+Line No: 26 Reduction: unary_expression -> postfix_expression
+Line No: 26 Reduction: multiplicative_expression -> unary_expression
+Line No: 26 Reduction: additive_expression -> multiplicative_expression
+Line No: 26 Reduction: relational_expression -> additive_expression
+Line No: 26 Reduction: equality_expression -> relational_expression
+Line No: 26 Reduction: logical_AND_expression -> equality_expression
+Line No: 26 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 26 Reduction: conditional_expression -> logical_OR_expression
+Line No: 26 Reduction: assignment_expression -> conditional_expression
+Line No: 26 Reduction: expression -> assignment_expression
+Line No: 26 Reduction: postfix_expression -> postfix_expression [ expression ]
+Line No: 26 Reduction: unary_expression -> postfix_expression
+Line No: 26 Reduction: primary_expression -> IDENTIFIER
+Line No: 26 Reduction: postfix_expression -> primary_expression
+Line No: 26 Reduction: unary_expression -> postfix_expression
+Line No: 26 Reduction: multiplicative_expression -> unary_expression
+Line No: 26 Reduction: additive_expression -> multiplicative_expression
+Line No: 26 Reduction: relational_expression -> additive_expression
+Line No: 26 Reduction: equality_expression -> relational_expression
+Line No: 26 Reduction: logical_AND_expression -> equality_expression
+Line No: 26 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 26 Reduction: conditional_expression -> logical_OR_expression
+Line No: 26 Reduction: assignment_expression -> conditional_expression
+Line No: 26 Reduction: assignment_expression -> unary_expression = assignment_expression
+Line No: 26 Reduction: expression -> assignment_expression
+Line No: 26 Reduction: expression_opt -> expression
+Line No: 26 Reduction: expression_statement -> expression_opt ;
+Line No: 26 Reduction: statement -> expression_statement
+Line No: 26 Reduction: block_item -> statement
+Line No: 26 Reduction: block_item_list -> block_item
+Line No: 27 Reduction: block_item_list_opt -> block_item_list
+Line No: 27 Reduction: compound_statement -> begin block_item_list_opt end
+Line No: 27 Reduction: statement -> compound_statement
+Line No: 27 Reduction: iteration_statement -> for ( expression_opt ; expression_opt ; expression_opt ) statement
+Line No: 27 Reduction: statement -> iteration_statement
+Line No: 27 Reduction: block_item -> statement
+Line No: 27 Reduction: block_item_list -> block_item_list block_item
+Line No: 28 Reduction: type_specifier -> INTEGER
+Line No: 28 Reduction: pointer_opt -> epsilon
+Line No: 28 Reduction: direct_declarator -> IDENTIFIER
+Line No: 28 Reduction: declarator -> pointer_opt direct_declarator
+Line No: 28 Reduction: init_declarator -> declarator
+Line No: 28 Reduction: declaration -> type_specifier init_declarator ;
+Line No: 28 Reduction: block_item -> declaration
+Line No: 28 Reduction: block_item_list -> block_item_list block_item
+Line No: 29 Reduction: primary_expression -> IDENTIFIER
+Line No: 29 Reduction: postfix_expression -> primary_expression
+Line No: 29 Reduction: unary_expression -> postfix_expression
+Line No: 29 Reduction: primary_expression -> IDENTIFIER
+Line No: 29 Reduction: postfix_expression -> primary_expression
+Line No: 29 Reduction: primary_expression -> IDENTIFIER
+Line No: 29 Reduction: postfix_expression -> primary_expression
+Line No: 29 Reduction: unary_expression -> postfix_expression
+Line No: 29 Reduction: multiplicative_expression -> unary_expression
+Line No: 29 Reduction: additive_expression -> multiplicative_expression
+Line No: 29 Reduction: relational_expression -> additive_expression
+Line No: 29 Reduction: equality_expression -> relational_expression
+Line No: 29 Reduction: logical_AND_expression -> equality_expression
+Line No: 29 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 29 Reduction: conditional_expression -> logical_OR_expression
+Line No: 29 Reduction: assignment_expression -> conditional_expression
+Line No: 29 Reduction: argument_expression_list -> assignment_expression
+Line No: 29 Reduction: argument_expression_list_opt -> argument_expression_list
+Line No: 29 Reduction: postfix_expression -> postfix_expression ( argument_expression_list_opt )
+Line No: 29 Reduction: unary_expression -> postfix_expression
+Line No: 29 Reduction: multiplicative_expression -> unary_expression
+Line No: 29 Reduction: additive_expression -> multiplicative_expression
+Line No: 29 Reduction: relational_expression -> additive_expression
+Line No: 29 Reduction: equality_expression -> relational_expression
+Line No: 29 Reduction: logical_AND_expression -> equality_expression
+Line No: 29 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 29 Reduction: conditional_expression -> logical_OR_expression
+Line No: 29 Reduction: assignment_expression -> conditional_expression
+Line No: 29 Reduction: assignment_expression -> unary_expression = assignment_expression
+Line No: 29 Reduction: expression -> assignment_expression
+Line No: 29 Reduction: expression_opt -> expression
+Line No: 29 Reduction: expression_statement -> expression_opt ;
+Line No: 29 Reduction: statement -> expression_statement
+Line No: 29 Reduction: block_item -> statement
+Line No: 29 Reduction: block_item_list -> block_item_list block_item
+Line No: 30 Reduction: CONSTANT -> INTCONST
+Line No: 30 Reduction: primary_expression -> CONSTANT
+Line No: 30 Reduction: postfix_expression -> primary_expression
+Line No: 30 Reduction: unary_expression -> postfix_expression
+Line No: 30 Reduction: multiplicative_expression -> unary_expression
+Line No: 30 Reduction: additive_expression -> multiplicative_expression
+Line No: 30 Reduction: relational_expression -> additive_expression
+Line No: 30 Reduction: equality_expression -> relational_expression
+Line No: 30 Reduction: logical_AND_expression -> equality_expression
+Line No: 30 Reduction: logical_OR_expression -> logical_AND_expression
+Line No: 30 Reduction: conditional_expression -> logical_OR_expression
+Line No: 30 Reduction: assignment_expression -> conditional_expression
+Line No: 30 Reduction: expression -> assignment_expression
+Line No: 30 Reduction: expression_opt -> expression
+Line No: 30 Reduction: jump_statement -> RETURN expression_opt ;
+Line No: 30 Reduction: statement -> jump_statement
+Line No: 30 Reduction: block_item -> statement
+Line No: 30 Reduction: block_item_list -> block_item_list block_item
+Line No: 31 Reduction: block_item_list_opt -> block_item_list
+Line No: 31 Reduction: compound_statement -> begin block_item_list_opt end
+Line No: 31 Reduction: function_definition -> type_specifier function_declarator compound_statement
+Line No: 31 Reduction: external_declaration -> function_definition
+Line No: 31 Reduction: translation_unit -> translation_unit external_declaration

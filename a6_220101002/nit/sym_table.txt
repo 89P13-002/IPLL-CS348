@@ -1,0 +1,35 @@
+Literals:
+
+") = "                                            : STRING
+"Boolean test: true\n"                            : STRING
+"Character constant test: "                       : STRING
+"Floating point test: "                           : STRING
+"\n"                                              : STRING
+"fibo("                                           : STRING
+'ABC'                                             : CHARCONST
+0                                                 : INTCONST
+1                                                 : INTCONST
+10                                                : INTCONST
+2                                                 : INTCONST
+3.14                                              : FLOATCONST
+33e5                                              : FLOATCONST
+5                                                 : INTCONST
+
+Identifiers:
+
+c                                                 
+f                                                 
+f2                                                
+f_even                                            
+f_odd                                             
+fibonacci                                         
+flag                                              
+m                                                 
+main                                              
+n                                                 
+printChar                                         
+printFloat                                        
+printInt                                          
+printStr                                          
+r                                                 
+true                                              
