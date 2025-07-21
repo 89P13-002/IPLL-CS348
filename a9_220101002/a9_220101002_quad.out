@@ -1,0 +1,150 @@
+Three Address Code (TAC):
+----------------------------------------------------------------------------------------------------
+0    : tp0 = 3.140000
+1    : pi = tp0
+
+2    : function def print begins
+3    : function def print ends
+
+4    : function def sum begins
+5    : tp1 = a + b
+6    : result = tp1
+7    : return result
+8    : function def sum ends
+
+9    : function def main begins
+10   : tp2 = 0
+11   : x = tp2
+12   : tp3 = 5
+13   : y = tp3
+14   : tp4 = 10
+15   : tp5 = &x
+16   : ptr = tp5
+17   : tp6 = 3
+18   : tp7 = 0
+19   : tp8 = tp6
+20   : tp8 = tp8 * 4
+21   : tp7 = tp8
+22   : tp9 = A
+23   : name = tp9[tp7]
+24   : param x
+25   : param y
+26   : sum = call 2, tp10
+27   : z = tp10
+28   : tp11 = 5
+29   : tp12 = 1
+30   : if z > tp11 goto 33
+31   : tp12 = 0
+32   : goto 48
+33   : tp13 = 3
+34   : tp14 = 0
+35   : tp15 = tp13
+36   : tp15 = tp15 * 4
+37   : tp14 = tp15
+38   : tp16 = name[tp14]
+39   : tp17 = A
+40   : tp18 = 1
+41   : if tp16 == tp17 goto 45
+42   : tp18 = 0
+43   : goto 48
+44   : goto 51
+45   : param .LC0
+46   : print = call 1, 
+47   : goto 51
+48   : param .LC1
+49   : print = call 1, 
+50   : goto 51
+51   : tp19 = 0
+52   : x = tp19
+53   : tp20 = 5
+54   : tp21 = 1
+55   : if x < tp20 goto 63
+56   : tp21 = 0
+57   : goto 67
+58   : goto 67
+59   : tp22 = 1
+60   : tp23 = x + tp22
+61   : x = tp23
+62   : goto 53
+63   : tp24 = y + x
+64   : y = tp24
+65   : goto 59
+66   : goto 59
+67   : tp25 = 10
+68   :  = tp25
+69   : return 
+70   : function def main ends
+
+----------------------------------------------------------------------------------------------------
+Symbol Table ST.global                                         
+----------------------------------------------------------------------------------------------------
+Name                Type           Initial Value  Size      Offset    Nested Table
+----------------------------------------------------------------------------------------------------
+tp0                 float          3.140000       8         0         NULL
+pi                  float          3.140000       8         8         NULL
+print               function       -              0         16        ptr-to-ST.global(print)
+sum                 function       -              0         16        ptr-to-ST.global(sum)
+main                function       -              0         16        ptr-to-ST.global(main)
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Symbol Table ST.global.print                                   
+----------------------------------------------------------------------------------------------------
+Name                Type           Initial Value  Size      Offset    Nested Table
+----------------------------------------------------------------------------------------------------
+RETVAL              void           -              0         0         NULL
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Symbol Table ST.global.sum                                     
+----------------------------------------------------------------------------------------------------
+Name                Type           Initial Value  Size      Offset    Nested Table
+----------------------------------------------------------------------------------------------------
+a                   integer        -              4         0         NULL
+b                   integer        -              4         4         NULL
+RETVAL              integer        -              4         8         NULL
+result              integer        -              4         12        NULL
+tp1                 integer        -              4         16        NULL
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Symbol Table ST.global.main                                    
+----------------------------------------------------------------------------------------------------
+Name                Type           Initial Value  Size      Offset    Nested Table
+----------------------------------------------------------------------------------------------------
+RETVAL              void           -              0         0         NULL
+tp2                 integer        0              4         0         NULL
+x                   integer        0              4         4         NULL
+tp3                 integer        5              4         8         NULL
+y                   integer        5              4         12        NULL
+z                   integer        -              4         16        NULL
+ptr                 integer*       -              4         20        NULL
+tp4                 integer        10             4         24        NULL
+name                char[10]       -              10        28        NULL
+tp5                 integer        -              4         35        NULL
+tp6                 integer        3              4         39        NULL
+tp7                 integer        -              4         43        NULL
+tp8                 integer        -              4         47        NULL
+tp9                 char           A              1         51        NULL
+sum                 integer        -              4         52        NULL
+tp10                integer        -              4         56        NULL
+tp11                integer        5              4         60        NULL
+tp12                integer        -              4         64        NULL
+tp13                integer        3              4         68        NULL
+tp14                integer        -              4         72        NULL
+tp15                integer        -              4         76        NULL
+tp16                char           -              1         80        NULL
+tp17                char           A              1         81        NULL
+tp18                integer        -              4         82        NULL
+b                   float          -              8         86        NULL
+continue            integer        -              4         94        NULL
+print               integer        -              4         98        NULL
+.LC0                integer        -              4         102       NULL
+.LC1                integer        -              4         106       NULL
+tp19                integer        0              4         110       NULL
+tp20                integer        5              4         114       NULL
+tp21                integer        -              4         118       NULL
+tp22                integer        1              4         122       NULL
+tp23                integer        -              4         126       NULL
+tp24                integer        -              4         130       NULL
+obj                 integer        -              4         134       NULL
+tp25                integer        10             4         138       NULL
+                    integer        -              4         142       NULL
+----------------------------------------------------------------------------------------------------

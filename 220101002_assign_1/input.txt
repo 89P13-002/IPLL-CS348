@@ -1,3 +1,0 @@
-Multiple		spaces and		tabs mixed
-Some special characters: ©®™
-EOF without newline
